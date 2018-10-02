@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cub</title>
+	<style type="text/css">
+		.box{
+			position: relative;
+			display: block;
+			margin: auto;
+			width: 600px;
+			height: 600px;
+			background: yellow;
+			margin-top: 2%;
+			overflow: auto;
+		}
+		.hand{
+			position: absolute;
+			width: 80%;
+			height: 50%;
+			left: 10%;
+			top: 50%;
+			background: black;
+			border-radius: 50%;
+			z-index: 1;
+		}
+		
+		.base{
+			position: absolute;
+			width: 60%;
+			height: 80%;
+			left: 20%;
+			top: 20%;
+			background: brown;
+			border-radius: 140px; 
+			overflow: hidden;
+			z-index: 2;
+		}
+		.center{
+			position: absolute;
+			width: 40%;
+			height: 30%;
+			left: 30%;
+			top: 30%;
+			background: yellow;
+			border-radius: 60px;
+			z-index: 2;
+	    }
+	    .eye-left{
+	    	position: absolute;
+	    	width: 30px;
+	    	height: 30px;
+	    	left: 30%;
+	    	top: 28%;
+	    	background: black;
+	    	z-index: 1;
+	    	border-radius: 50%;
+	    	z-index: 1;
+	    }
+	    .eye-right{
+	    	position: absolute;
+	    	width: 30px;
+	    	height: 30px;
+	    	right: 30%;
+	    	top: 28%;
+	    	background: black;
+	    	z-index: 1;
+	    	border-radius: 50%;
+	    	z-index: 1;
+	    }
+	    .pupil{
+	    	position: absolute;
+	    	width: 20%;
+	    	height: 20%;
+	    	left: 60%;
+	    	top: 20%;
+	    	background: white;
+	    	border-radius: 50%;
+	    }
+
+
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="ear-left">
+			<div class="inner-ear"></div>
+		</div>
+		<div class="ear-right">
+			<div class="inner-ear"></div>
+		</div>
+		<div class="hand"></div>
+		<div class="base">
+			<div class="center"></div>
+			<div class="eye-left">
+				<div class="pupil"></div>
+			</div>
+			<div class="eye-right">
+				<div class="pupil"></div>
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+</html>
