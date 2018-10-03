@@ -3,14 +3,17 @@
 <head>
 	<title>Cub</title>
 	<style type="text/css">
+	    body{
+	    	background: #60b0a4;
+	    }
 		.box{
 			position: relative;
 			display: block;
 			margin: auto;
 			width: 600px;
 			height: 600px;
-			background: yellow;
-			margin-top: 2%;
+			background: transparent;
+			margin-top: 1%;
 			overflow: auto;
 		}
 		.hand{
@@ -19,19 +22,19 @@
 			height: 50%;
 			left: 10%;
 			top: 50%;
-			background: black;
-			border-radius: 50%;
+			background: #0e1215;
+			border-radius: 50% 50% 0px 0px;
 			z-index: 1;
 		}
 		
 		.base{
 			position: absolute;
 			width: 60%;
-			height: 80%;
+			height: 75%;
 			left: 20%;
 			top: 20%;
 			background: brown;
-			border-radius: 140px; 
+			border-radius: 150px; 
 			overflow: hidden;
 			z-index: 2;
 		}
@@ -51,7 +54,7 @@
 	    	height: 30px;
 	    	left: 30%;
 	    	top: 28%;
-	    	background: black;
+	    	background: #0e1215;
 	    	z-index: 1;
 	    	border-radius: 50%;
 	    	z-index: 1;
@@ -62,10 +65,10 @@
 	    	height: 30px;
 	    	right: 30%;
 	    	top: 28%;
-	    	background: black;
+	    	background: #0e1215;
 	    	z-index: 1;
 	    	border-radius: 50%;
-	    	z-index: 1;
+	    	
 	    }
 	    .pupil{
 	    	position: absolute;
@@ -76,12 +79,123 @@
 	    	background: white;
 	    	border-radius: 50%;
 	    }
+	    .ear-left{
+	    	position: absolute;
+	    	width: 120px;
+	    	height: 120px;
+	    	background: #942525;
+	    	border-radius: 50%;
+	    	z-index: 1;
+	    	top: 19%;
+	    	left: 16%;
+	    }
+	    .ear-right{
+	    	position: absolute;
+	    	width: 120px;
+	    	height: 120px;
+	    	background: #942525;
+	    	border-radius: 50%;
+	    	z-index: 1;
+	    	top: 19%;
+	    	right: 16%;
+	    }
+	    .inner-ear{
+	    	position: absolute;
+	    	width: 50%;
+	    	height: 50%;
+	    	background: yellow;
+	    	border-radius: 50%;
+	    	top: 25%;
+	    	left: 25%;
+	    }
+	    .nose{
+	    	position: absolute;
+	    	width: 55%;
+	    	height: 35%;
+	    	border-radius: 30% 30% 50% 50%;
+	    	background: #0e1215;
+	    	left: 22.5%;
+	    	top: 20%;
+	    }
+	    .nostril{
+	    	position: absolute;
+	    	width: 15px;
+	    	height: 8px;
+	    	border-radius: 60%;
+	    	top: 12%;
+	    	left: 65%;
+	    	background: white;
+	    }
+        .line{
+        	position: absolute;
+        	width: 4px;
+        	height: 30px;
+        	top: 55%;
+        	left: 49%;
+        	background: #0e1215;
+        }
+        .mouth{
+        	position: absolute;
+        	width: 35%;
+        	height: 7px;
+        	top: 76%;
+        	left: 32.5%;
+        	border-radius: 0px 0px 50% 50%;
+        	background: #0e1215;
+        }
+        .hair{
+        	position: absolute;
+        	width: 30px;
+        	height: 30px;
+        	background: #0e1215;
+        	-webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            
+        }
+        .hair-left{
+            top: 17%;
+        	left: 44%;
+            transform: rotate(-20deg);
+        }
+        .hair-right{
+            top: 17%;
+        	left: 49.5%;
+            transform: rotate(5deg);
+        }
+        .hair-side-left-1{
+        	top: 43%;
+        	left: 17%;
+        	transform: rotate(-55deg);
+        }
+        .hair-side-left-2{
+        	top: 47%;
+        	left: 17.5%;
+        	transform: rotate(-75deg);
+        }
+        .hair-side-right-1{
+        	top: 43%;
+        	right: 17%;
+        	transform: rotate(55deg);
+        }
+        .hair-side-right-2{
+        	top: 47%;
+        	right: 17.5%;
+        	transform: rotate(75deg);
+        }
+       
+
 
 
 	</style>
 </head>
 <body>
 	<div class="box">
+		<div class="hair hair-left"></div>
+		<div class="hair hair-right"></div>
+		<div class="hair hair-side-left-1"></div>
+		<div class="hair hair-side-left-2"></div>
+		<div class="hair hair-side-right-1"></div>
+		<div class="hair hair-side-right-2"></div>
 		<div class="ear-left">
 			<div class="inner-ear"></div>
 		</div>
@@ -90,7 +204,13 @@
 		</div>
 		<div class="hand"></div>
 		<div class="base">
-			<div class="center"></div>
+			<div class="center">
+				<div class="nose">
+					<div class="nostril"></div>
+				</div>
+				<div class="line"></div>
+				<div class="mouth"></div>
+			</div>
 			<div class="eye-left">
 				<div class="pupil"></div>
 			</div>
@@ -100,6 +220,7 @@
 		</div>
 		
 	</div>
+	<div class="circular"></div>
 
 </body>
 </html>
